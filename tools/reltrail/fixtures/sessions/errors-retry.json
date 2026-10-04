@@ -1,0 +1,31 @@
+{
+  "session": "errors-retry",
+  "events": [
+    {
+      "tick": 0,
+      "action": "rollback",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [
+    {
+      "tick": 1,
+      "error": true
+    },
+    {
+      "tick": 2,
+      "replicas": 2,
+      "ready": 1,
+      "updated": 2,
+      "spec": 2
+    },
+    {
+      "tick": 3,
+      "replicas": 2,
+      "ready": 2,
+      "updated": 2,
+      "spec": 2
+    }
+  ],
+  "podSamples": []
+}

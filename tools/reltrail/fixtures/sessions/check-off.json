@@ -1,0 +1,42 @@
+{
+  "session": "check-off",
+  "events": [
+    {
+      "tick": 0,
+      "action": "deploy",
+      "check": false
+    },
+    {
+      "tick": 20,
+      "action": "rollback",
+      "check": false
+    }
+  ],
+  "deploymentSamples": [
+    {
+      "tick": 1,
+      "replicas": 1,
+      "ready": 0,
+      "updated": 1,
+      "spec": 1
+    },
+    {
+      "tick": 21,
+      "replicas": 1,
+      "ready": 0,
+      "updated": 1,
+      "spec": 1
+    }
+  ],
+  "podSamples": [
+    {
+      "tick": 0,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 0,
+      "error": true
+    }
+  ]
+}

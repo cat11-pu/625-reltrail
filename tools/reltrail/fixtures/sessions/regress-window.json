@@ -1,0 +1,46 @@
+{
+  "session": "regress-window",
+  "events": [
+    {
+      "tick": 0,
+      "action": "check",
+      "check": true
+    },
+    {
+      "tick": 10,
+      "action": "check",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [
+    {
+      "tick": 1,
+      "replicas": 2,
+      "ready": 2,
+      "updated": 2,
+      "spec": 2
+    },
+    {
+      "tick": 10,
+      "replicas": 2,
+      "ready": 1,
+      "updated": 2,
+      "spec": 2
+    },
+    {
+      "tick": 11,
+      "replicas": 2,
+      "ready": 1,
+      "updated": 2,
+      "spec": 2
+    },
+    {
+      "tick": 12,
+      "replicas": 2,
+      "ready": 2,
+      "updated": 2,
+      "spec": 2
+    }
+  ],
+  "podSamples": []
+}

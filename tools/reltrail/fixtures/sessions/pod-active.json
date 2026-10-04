@@ -1,0 +1,51 @@
+{
+  "session": "pod-active",
+  "events": [
+    {
+      "tick": 10,
+      "action": "gray",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [],
+  "podSamples": [
+    {
+      "tick": 10,
+      "error": true
+    },
+    {
+      "tick": 11,
+      "error": true
+    },
+    {
+      "tick": 12,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "tick": 15,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "tick": 16,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": true
+        }
+      ]
+    }
+  ]
+}

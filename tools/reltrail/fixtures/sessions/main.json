@@ -1,0 +1,135 @@
+{
+  "session": "main",
+  "events": [
+    {
+      "tick": 0,
+      "action": "deploy",
+      "check": true
+    },
+    {
+      "tick": 30,
+      "action": "gray",
+      "check": true
+    },
+    {
+      "tick": 40,
+      "action": "restart",
+      "check": true
+    },
+    {
+      "tick": 50,
+      "action": "check",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [
+    {
+      "tick": 1,
+      "replicas": 3,
+      "ready": 1,
+      "updated": 3,
+      "spec": 3
+    },
+    {
+      "tick": 2,
+      "replicas": 3,
+      "ready": 2,
+      "updated": 3,
+      "spec": 3
+    },
+    {
+      "tick": 3,
+      "replicas": 3,
+      "ready": 3,
+      "updated": 3,
+      "spec": 3
+    },
+    {
+      "tick": 21,
+      "replicas": 3,
+      "ready": 2,
+      "updated": 3,
+      "spec": 3
+    },
+    {
+      "tick": 51,
+      "replicas": 4,
+      "ready": 1,
+      "updated": 2,
+      "spec": 4
+    },
+    {
+      "tick": 52,
+      "replicas": 4,
+      "ready": 2,
+      "updated": 3,
+      "spec": 4
+    },
+    {
+      "tick": 53,
+      "replicas": 4,
+      "ready": 3,
+      "updated": 4,
+      "spec": 4
+    },
+    {
+      "tick": 54,
+      "replicas": 4,
+      "ready": 3,
+      "updated": 4,
+      "spec": 4
+    },
+    {
+      "tick": 58,
+      "replicas": 4,
+      "ready": 4,
+      "updated": 3,
+      "spec": 4
+    }
+  ],
+  "podSamples": [
+    {
+      "tick": 0,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 0,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 1,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 2,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 3,
+      "error": true
+    },
+    {
+      "tick": 30,
+      "error": true
+    },
+    {
+      "tick": 31,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 34,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": true
+        }
+      ]
+    }
+  ]
+}

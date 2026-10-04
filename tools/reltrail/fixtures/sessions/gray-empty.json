@@ -1,0 +1,42 @@
+{
+  "session": "gray-empty",
+  "events": [
+    {
+      "tick": 0,
+      "action": "gray",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [],
+  "podSamples": [
+    {
+      "tick": 0,
+      "error": true
+    },
+    {
+      "tick": 1,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 2,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "tick": 5,
+      "error": false,
+      "containerStatuses": [
+        {
+          "name": "app",
+          "ready": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "session": "unknown-only",
+  "events": [
+    {
+      "tick": 7,
+      "action": "purge",
+      "check": true
+    }
+  ],
+  "deploymentSamples": [],
+  "podSamples": []
+}

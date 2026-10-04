@@ -1,0 +1,33 @@
+{
+  "session": "never-drain",
+  "events": [
+    {
+      "tick": 0,
+      "action": "deploy",
+      "check": false
+    }
+  ],
+  "deploymentSamples": [],
+  "podSamples": [
+    {
+      "tick": 0,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 0,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 1,
+      "error": false,
+      "containerStatuses": []
+    },
+    {
+      "tick": 2,
+      "error": false,
+      "containerStatuses": []
+    }
+  ]
+}
